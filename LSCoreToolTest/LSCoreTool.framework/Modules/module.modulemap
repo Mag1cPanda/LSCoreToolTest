@@ -1,0 +1,6 @@
+framework module LSCoreTool {
+  umbrella header "LSCoreTool.h"
+
+  export *
+  module * { export * }
+}
