@@ -162,19 +162,19 @@ self.returnKeyHandler.toolbarManageBehaviour = IQAutoToolbarBySubviews;””
 
 
 ###代码添加约束
-```
+
 集成了[PureLayout](https://github.com/PureLayout/PureLayout)
 使用方法详情可见[Demo](https://github.com/Mag1cPanda/ALTest-PureLayout-)
-```
+
 
 ###刷新控件
-```
+
 集成了[MJRefresh](https://github.com/CoderMJLee/MJRefresh)
 使用方法大家都会，这里就不介绍了
-```
+
 
 ###图片下载
-```
+
 集成了[SDWebImage](https://github.com/rs/SDWebImage)
 使用详情请参考github链接
-```
+
