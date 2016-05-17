@@ -79,4 +79,20 @@
 
 //color:支持@“#123456”、 @“0X123456”、 @“123456”三种格式
 + (UIColor *)colorWithHexString:(NSString *)color alpha:(CGFloat)alpha;
+
+#pragma mark - NSUserDefaults方法
++(void)saveNSUserDefaultsForInteger:(NSInteger)value forKey:(NSString *)key;
+
++(void)saveNSUserDefaultsForFloat:(float)value forKey:(NSString *)key;
+
++(void)saveNSUserDefaultsForDouble:(double)value forKey:(NSString *)key;
+
++(void)saveNSUserDefaultsForBOOL:(BOOL)value forKey:(NSString *)key;
+
++(void)saveNSUserDefaultsForObject:(id)value forKey:(NSString *)key;
+
++(id)getDataForKey:(NSString *)key;
+
++(void)removeAllUserDefaults;  //移除所有本地用户信息
+
 @end

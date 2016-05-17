@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CC8128AE1CCF07B90086C214 /* LSCoreTool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC8128AD1CCF07B90086C214 /* LSCoreTool.framework */; };
-		CC8128AF1CCF09600086C214 /* LSCoreTool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC8128AD1CCF07B90086C214 /* LSCoreTool.framework */; };
-		CC8128B01CCF09600086C214 /* LSCoreTool.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CC8128AD1CCF07B90086C214 /* LSCoreTool.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CC3D76BE1CEB1B0C00FF9764 /* Singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = CC3D76BD1CEB1B0C00FF9764 /* Singleton.m */; };
+		CC3D76C01CEB3B1400FF9764 /* LSCoreTool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC3D76BF1CEB3B1400FF9764 /* LSCoreTool.framework */; };
+		CC3D76C11CEB3CA700FF9764 /* LSCoreTool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC3D76BF1CEB3B1400FF9764 /* LSCoreTool.framework */; };
+		CC3D76C21CEB3CA700FF9764 /* LSCoreTool.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CC3D76BF1CEB3B1400FF9764 /* LSCoreTool.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CCDB8B7C1CCDA4980005D0CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CCDB8B7B1CCDA4980005D0CC /* main.m */; };
 		CCDB8B7F1CCDA4980005D0CC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CCDB8B7E1CCDA4980005D0CC /* AppDelegate.m */; };
 		CCDB8B821CCDA4980005D0CC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCDB8B811CCDA4980005D0CC /* ViewController.m */; };
@@ -25,7 +26,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				CC8128B01CCF09600086C214 /* LSCoreTool.framework in Embed Frameworks */,
+				CC3D76C21CEB3CA700FF9764 /* LSCoreTool.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -33,7 +34,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		CC8128AD1CCF07B90086C214 /* LSCoreTool.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LSCoreTool.framework; sourceTree = "<group>"; };
+		CC3D76BC1CEB1B0C00FF9764 /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		CC3D76BD1CEB1B0C00FF9764 /* Singleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Singleton.m; sourceTree = "<group>"; };
+		CC3D76BF1CEB3B1400FF9764 /* LSCoreTool.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LSCoreTool.framework; sourceTree = "<group>"; };
 		CCDB8B771CCDA4980005D0CC /* LSCoreToolTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LSCoreToolTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCDB8B7B1CCDA4980005D0CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CCDB8B7D1CCDA4980005D0CC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,8 +54,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC8128AF1CCF09600086C214 /* LSCoreTool.framework in Frameworks */,
-				CC8128AE1CCF07B90086C214 /* LSCoreTool.framework in Frameworks */,
+				CC3D76C11CEB3CA700FF9764 /* LSCoreTool.framework in Frameworks */,
+				CC3D76C01CEB3B1400FF9764 /* LSCoreTool.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,11 +81,13 @@
 		CCDB8B791CCDA4980005D0CC /* LSCoreToolTest */ = {
 			isa = PBXGroup;
 			children = (
-				CC8128AD1CCF07B90086C214 /* LSCoreTool.framework */,
+				CC3D76BF1CEB3B1400FF9764 /* LSCoreTool.framework */,
 				CCDB8B7D1CCDA4980005D0CC /* AppDelegate.h */,
 				CCDB8B7E1CCDA4980005D0CC /* AppDelegate.m */,
 				CCDB8B801CCDA4980005D0CC /* ViewController.h */,
 				CCDB8B811CCDA4980005D0CC /* ViewController.m */,
+				CC3D76BC1CEB1B0C00FF9764 /* Singleton.h */,
+				CC3D76BD1CEB1B0C00FF9764 /* Singleton.m */,
 				CCDB8B831CCDA4980005D0CC /* Main.storyboard */,
 				CCDB8B861CCDA4980005D0CC /* Assets.xcassets */,
 				CCDB8B881CCDA4980005D0CC /* LaunchScreen.storyboard */,
@@ -172,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCDB8B821CCDA4980005D0CC /* ViewController.m in Sources */,
+				CC3D76BE1CEB1B0C00FF9764 /* Singleton.m in Sources */,
 				CCDB8B7F1CCDA4980005D0CC /* AppDelegate.m in Sources */,
 				CCDB8B7C1CCDA4980005D0CC /* main.m in Sources */,
 			);

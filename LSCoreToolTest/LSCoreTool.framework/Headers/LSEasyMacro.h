@@ -30,23 +30,33 @@
 /** 获取硬件信息*/
 #define SCREEN_W [UIScreen mainScreen].bounds.size.width
 #define SCREEN_H [UIScreen mainScreen].bounds.size.height
-#define LSCurrentLanguage ([[NSLocale preferredLanguages] objectAtIndex:0])
+#define CurrentLanguage ([[NSLocale preferredLanguages] objectAtIndex:0])
 #define CurrentSystemVersion [[[UIDevice currentDevice] systemVersion] floatValue]
 
 
 /** 适配*/
-#define iOS_7_OR_LATER    ([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0)
-#define iOS_8_OR_LATER    ([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0)
-#define iOS_9_OR_LATER    ([[[UIDevice currentDevice] systemVersion] floatValue] >= 9.0)
+#define iOS_7_OR_LATER    CurrentSystemVersion >= 7.0
+#define iOS_8_OR_LATER    CurrentSystemVersion >= 8.0
+#define iOS_9_OR_LATER    CurrentSystemVersion >= 9.0
 
-#define iPhone4_OR_4s    (SXSCREEN_H == 480)
-#define iPhone5_OR_5c_OR_5s   (SXSCREEN_H == 568)
-#define iPhone6_OR_6s   (SXSCREEN_H == 667)
-#define iPhone6Plus_OR_6sPlus   (SXSCREEN_H == 736)
+#define iPhone4_OR_4s    (SCREEN_H == 480)
+#define iPhone5_OR_5c_OR_5s   (SCREEN_H == 568)
+#define iPhone6_OR_6s   (SCREEN_H == 667)
+#define iPhone6Plus_OR_6sPlus   (SCREEN_H == 736)
 #define iPad (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 
+//判断是真机还是模拟器
+#if TARGET_OS_IPHONE
+//iPhone Device
+#endif
+
+#if TARGET_IPHONE_SIMULATOR
+//iPhone Simulator
+#endif
+
+
 /** 弱指针*/
-#define WeakSelf(weakSelf) __weak __typeof(&*self)weakSelf = self;
+#define WeakSelf(weakSelf) __weak __typeof(&*self)weakSelf = self
 
 /** 加载本地文件*/
 #define LoadImage(file,type) [UIImage imageWithContentsOfFile:[[NSBundle mainBundle]pathForResource:file ofType:type]]
@@ -61,10 +71,52 @@
 #define LSNotificationCenter [NSNotificationCenter defaultCenter]
 
 //UIApplication
-#define LSApplication [UIApplication sharedApplication];
+#define LSApplication [UIApplication sharedApplication]
 
 /** 数据存储*/
 #define LSUserDefaults [NSUserDefaults standardUserDefaults]
 #define LSCacheDir [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject]
 #define LSDocumentDir [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject]
 #define LSTempDir NSTemporaryDirectory()
+
+//由角度获取弧度 弧度获取角度
+#define degreesToRadian(x) (M_PI * (x) / 180.0)
+#define radianToDegrees(radian) (radian*180.0)/(M_PI)
+
+
+//初始化单例类
+#define SYNTHESIZE_SINGLETON_FOR_CLASS(classname) \
+\
+static classname *shared##classname = nil; \
+\
++ (classname *)shared##classname \
+{ \
+@synchronized(self) \
+{ \
+if (shared##classname == nil) \
+{ \
+shared##classname = [[self alloc] init]; \
+} \
+} \
+\
+return shared##classname; \
+} \
+\
++ (id)allocWithZone:(NSZone *)zone \
+{ \
+@synchronized(self) \
+{ \
+if (shared##classname == nil) \
+{ \
+shared##classname = [super allocWithZone:zone]; \
+return shared##classname; \
+} \
+} \
+\
+return nil; \
+} \
+\
+- (id)copyWithZone:(NSZone *)zone \
+{ \
+return self; \
+}
