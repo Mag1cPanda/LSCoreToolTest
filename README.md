@@ -56,7 +56,7 @@
 
 
 /** 弱指针*/
-#define WeakSelf(weakSelf) __weak __typeof(&*self)weakSelf = self;
+#define WeakSelf(weakSelf) __weak __typeof(&*self)weakSelf = self
 
 /** 加载本地文件*/
 #define LoadImage(file,type) [UIImage imageWithContentsOfFile:[[NSBundle mainBundle]pathForResource:file ofType:type]]
@@ -71,7 +71,7 @@
 #define LSNotificationCenter [NSNotificationCenter defaultCenter]
 
 //UIApplication
-#define LSApplication [UIApplication sharedApplication];
+#define LSApplication [UIApplication sharedApplication]
 
 /** 数据存储*/
 #define LSUserDefaults [NSUserDefaults standardUserDefaults]
