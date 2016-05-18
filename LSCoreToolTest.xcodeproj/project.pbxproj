@@ -8,15 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		CC3D76BE1CEB1B0C00FF9764 /* Singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = CC3D76BD1CEB1B0C00FF9764 /* Singleton.m */; };
-		CC3D76C01CEB3B1400FF9764 /* LSCoreTool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC3D76BF1CEB3B1400FF9764 /* LSCoreTool.framework */; };
-		CC3D76C11CEB3CA700FF9764 /* LSCoreTool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC3D76BF1CEB3B1400FF9764 /* LSCoreTool.framework */; };
-		CC3D76C21CEB3CA700FF9764 /* LSCoreTool.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CC3D76BF1CEB3B1400FF9764 /* LSCoreTool.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CCDB8B7C1CCDA4980005D0CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CCDB8B7B1CCDA4980005D0CC /* main.m */; };
 		CCDB8B7F1CCDA4980005D0CC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CCDB8B7E1CCDA4980005D0CC /* AppDelegate.m */; };
 		CCDB8B821CCDA4980005D0CC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCDB8B811CCDA4980005D0CC /* ViewController.m */; };
 		CCDB8B851CCDA4980005D0CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCDB8B831CCDA4980005D0CC /* Main.storyboard */; };
 		CCDB8B871CCDA4980005D0CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCDB8B861CCDA4980005D0CC /* Assets.xcassets */; };
-		CCDB8B8A1CCDA4980005D0CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCDB8B881CCDA4980005D0CC /* LaunchScreen.storyboard */; };
+		CCF751A21CEC48BA00AC1196 /* LSCoreTool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCF751A11CEC48BA00AC1196 /* LSCoreTool.framework */; };
+		CCF751A61CEC499700AC1196 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CCF751A51CEC499700AC1196 /* Default-568h@2x.png */; };
+		CCF751A71CEC4A7500AC1196 /* LSCoreTool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CCF751A11CEC48BA00AC1196 /* LSCoreTool.framework */; };
+		CCF751A81CEC4A7500AC1196 /* LSCoreTool.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CCF751A11CEC48BA00AC1196 /* LSCoreTool.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,7 +26,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				CC3D76C21CEB3CA700FF9764 /* LSCoreTool.framework in Embed Frameworks */,
+				CCF751A81CEC4A7500AC1196 /* LSCoreTool.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		CC3D76BC1CEB1B0C00FF9764 /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
 		CC3D76BD1CEB1B0C00FF9764 /* Singleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Singleton.m; sourceTree = "<group>"; };
-		CC3D76BF1CEB3B1400FF9764 /* LSCoreTool.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LSCoreTool.framework; sourceTree = "<group>"; };
 		CCDB8B771CCDA4980005D0CC /* LSCoreToolTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LSCoreToolTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCDB8B7B1CCDA4980005D0CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CCDB8B7D1CCDA4980005D0CC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -45,8 +44,9 @@
 		CCDB8B811CCDA4980005D0CC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CCDB8B841CCDA4980005D0CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CCDB8B861CCDA4980005D0CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CCDB8B891CCDA4980005D0CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CCDB8B8B1CCDA4980005D0CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCF751A11CEC48BA00AC1196 /* LSCoreTool.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = LSCoreTool.framework; sourceTree = "<group>"; };
+		CCF751A51CEC499700AC1196 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +54,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC3D76C11CEB3CA700FF9764 /* LSCoreTool.framework in Frameworks */,
-				CC3D76C01CEB3B1400FF9764 /* LSCoreTool.framework in Frameworks */,
+				CCF751A71CEC4A7500AC1196 /* LSCoreTool.framework in Frameworks */,
+				CCF751A21CEC48BA00AC1196 /* LSCoreTool.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +65,7 @@
 		CCDB8B6E1CCDA4980005D0CC = {
 			isa = PBXGroup;
 			children = (
+				CCF751A51CEC499700AC1196 /* Default-568h@2x.png */,
 				CCDB8B791CCDA4980005D0CC /* LSCoreToolTest */,
 				CCDB8B781CCDA4980005D0CC /* Products */,
 			);
@@ -81,7 +82,7 @@
 		CCDB8B791CCDA4980005D0CC /* LSCoreToolTest */ = {
 			isa = PBXGroup;
 			children = (
-				CC3D76BF1CEB3B1400FF9764 /* LSCoreTool.framework */,
+				CCF751A11CEC48BA00AC1196 /* LSCoreTool.framework */,
 				CCDB8B7D1CCDA4980005D0CC /* AppDelegate.h */,
 				CCDB8B7E1CCDA4980005D0CC /* AppDelegate.m */,
 				CCDB8B801CCDA4980005D0CC /* ViewController.h */,
@@ -90,7 +91,6 @@
 				CC3D76BD1CEB1B0C00FF9764 /* Singleton.m */,
 				CCDB8B831CCDA4980005D0CC /* Main.storyboard */,
 				CCDB8B861CCDA4980005D0CC /* Assets.xcassets */,
-				CCDB8B881CCDA4980005D0CC /* LaunchScreen.storyboard */,
 				CCDB8B8B1CCDA4980005D0CC /* Info.plist */,
 				CCDB8B7A1CCDA4980005D0CC /* Supporting Files */,
 			);
@@ -163,9 +163,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCDB8B8A1CCDA4980005D0CC /* LaunchScreen.storyboard in Resources */,
 				CCDB8B871CCDA4980005D0CC /* Assets.xcassets in Resources */,
 				CCDB8B851CCDA4980005D0CC /* Main.storyboard in Resources */,
+				CCF751A61CEC499700AC1196 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,14 +192,6 @@
 				CCDB8B841CCDA4980005D0CC /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		CCDB8B881CCDA4980005D0CC /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CCDB8B891CCDA4980005D0CC /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -241,7 +233,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -279,7 +271,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -290,13 +282,12 @@
 		CCDB8B8F1CCDA4980005D0CC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/LSCoreToolTest",
 				);
 				INFOPLIST_FILE = LSCoreToolTest/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -311,13 +302,12 @@
 		CCDB8B901CCDA4980005D0CC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/LSCoreToolTest",
 				);
 				INFOPLIST_FILE = LSCoreToolTest/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

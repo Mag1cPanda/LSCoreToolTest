@@ -82,7 +82,6 @@
     BOOL b = [Util getDataForKey:@"bool"];
     NSLog(@"%d",b);
     
-
 }
 
 - (void)didReceiveMemoryWarning {
